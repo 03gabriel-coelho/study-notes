@@ -6,7 +6,7 @@ main() {
     print('O valor da nota é $nota');
   }
 
-  var notasMap = {8.9, 9.3, 7.8, 6.9, 9.1}; // É possível utilizar um map
+  var notasMap = {8.9, 9.3, 7.8, 6.9, 9.1}; // É possível utilizar um set
 
   for(var nota in notasMap) {
     print('O valor da notaMap é $nota');
