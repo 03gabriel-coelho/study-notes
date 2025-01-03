@@ -1,0 +1,16 @@
+/* PROPRIEDADES INTERESSANTES: */
+
+anotacao {
+  display: flex; /* transforma o container em um flex container */
+  flex-direction: row; /* define a direção dos itens dentro do container */
+  flex-wrap: wrap; /* define se os itens devem quebrar linha ou não */
+  justify-content: center; /* alinha os itens no centro do container */
+  align-items: center; /* alinha os itens no centro do container */
+  align-content: center; /* alinha os itens no centro do container */
+  align-self: flex-end; /* alinha o item no final do container independente do resto dos componentes junto a ele*/
+  order: 1; /* define a ordem dos itens dentro do container */
+  flex-grow: 1; /* define o quanto o item pode crescer em relação aos outros itens */
+  flex-shrink: 1; /* define o quanto o item pode encolher em relação aos outros itens */
+  flex-basis: 100px; /* define o tamanho base do item */
+  flex: 1 1 100px; /* define o tamanho base, o quanto pode crescer e o quanto pode encolher */
+}
