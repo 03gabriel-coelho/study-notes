@@ -1,6 +1,6 @@
 /* PROPRIEDADES INTERESSANTES: */
 
-anotacao {
+anotacao flex {
   display: flex; /* transforma o container em um flex container */
   flex-direction: row; /* define a direção dos itens dentro do container */
   flex-wrap: wrap; /* define se os itens devem quebrar linha ou não */
@@ -13,4 +13,27 @@ anotacao {
   flex-shrink: 1; /* define o quanto o item pode encolher em relação aos outros itens */
   flex-basis: 100px; /* define o tamanho base do item */
   flex: 1 1 100px; /* define o tamanho base, o quanto pode crescer e o quanto pode encolher */
+}
+
+anotacao grid {
+  display: grid; /* transforma o container em um grid container */
+  grid-template-columns: repeat(3, 1fr); /* define a quantidade de colunas e o tamanho de cada uma */
+  grid-template-rows: repeat(3, 1fr); /* define a quantidade de linhas e o tamanho de cada uma */
+  grid-auto-rows: 100px; /* define o tamanho padrão das linhas */
+  grid-template-areas: "header header header" "main main sidebar" "footer footer footer"; /* define a área de cada item */
+  grid-area: header; /* define a área do item */
+  grid-column-start: 1; /* define a coluna inicial do item */
+  grid-column-end: 3; /* define a coluna final do item */
+  grid-row-start: 1; /* define a linha inicial do item */
+  grid-row-end: 3; /* define a linha final do item */
+  grid-column: 1 / 3; /* define a coluna inicial e final do item */
+  grid-row: 1 / 3; /* define a linha inicial e final do item */
+  grid-gap: 16px; /* define o espaçamento entre os itens */
+  justify-items: center; /* alinha os itens no centro do container */
+  align-items: center; /* alinha os itens no centro do container */
+  justify-content: center; /* alinha os itens no centro do container */
+  align-content: center; /* alinha os itens no centro do container */
+  place-items: center; /* alinha os itens no centro do container */
+  justify-self: center; /* alinha o item no centro da coluna */
+  align-self: center; /* alinha o item no centro da linha */
 }
