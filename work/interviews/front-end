@@ -1,0 +1,30 @@
+1.O que é SQL injection?
+2.O que é escopo em JavaScript?
+3.Explique o CSS “box model” e os componentes de layout que o compõem.
+4.Como JavaScript e jQuery são diferentes?
+5.O que é é um Callback Hell?
+6.O que é Cross-Site Scripting (XSS)?
+7.O que é Flux?
+8.O que é Sass?
+9.O que é encapsulamento?
+10.Qual o ponto de se usar Redux?
+11.Explique a diferença de null e undefined em JavaScript
+12.Liste as vantagens da arquitetura de microsserviços
+13.Quais são as vantagens do NoSQL sobre o RDBMS tradicional?
+14.O que é programação reativa?
+15.O que são os reducers no Redux?
+16.Qual o papel do HTML na indexação de páginas por buscadores?
+17.Cite 3 conceitos da Programação Orientada a Objetos aplicada ao JavaScript
+18.Quais os beneficios do TypeScript?
+19.O que é uma interface no TypeScript?
+20.Qual o significado de Mock?
+21.O que é o esquema do GraphQL?
+22.O que é o Virtual DOM? Qual sua vantagem?
+23.O que é e como usar a convenção Block Element Modifier (BEM)?
+24.JavaScript​: Explique como você pode usar funções JavaScript, como forEach, Map ou Reduce.
+25.React: O que é e como você pode aproveitar as vantagens do PureComponent?
+26.O que é serverless computing?
+27.Quais são os tipos primitivos do JavaScript?
+28.Qual a diferença entre inline and inline-block?
+29.Qual a diferença entre elementos posicionados como relative, fixed, absolute e static?
+30.Você pode explicar a diferença entre codificar um site para ser responsivo e usar uma estratégia mobile-first?
