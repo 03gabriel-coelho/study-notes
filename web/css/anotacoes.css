@@ -36,4 +36,6 @@ anotacao grid {
   place-items: center; /* alinha os itens no centro do container */
   justify-self: center; /* alinha o item no centro da coluna */
   align-self: center; /* alinha o item no centro da linha */
+  grid-template-columns: repeat(auto-fill, 150px); /* FAZ TER VÁRIAS COLUNAS ATÉ PREENCHER A TELA */
+  grid-template-columns: repeat(auto-fit, 150px); /* LIMITA DE ACORDO COM A QUANTIDADE DE COMPONENTES*/
 }

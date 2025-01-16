@@ -1,0 +1,22 @@
+.galeria {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 150px); FAZ TER VÁRIAS COLUNAS ATÉ PREENCHER A TELA*/
+  /* grid-template-columns: repeat(auto-fit, 150px); LIMITA DE ACORDO COM A QUANTIDADE DE COMPONENTES*/
+  /* grid-template-rows: repeat(7, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+  
+}
+
+.item {
+  width: 150px;
+  background-color: blue;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item4 {
+  /* grid-column: 5/ span 3; O SPAN OBRIGA O COMPONENTE A INTERAR 3 COLUNAS*/
+  /* grid-column-end: -2; PEGA DOS VALORES NEGATIVOS */
+}
