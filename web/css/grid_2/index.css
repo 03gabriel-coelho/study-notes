@@ -1,22 +1,90 @@
+body {
+  margin: 0 !important;
+  padding: 10px;
+}
+
 .galeria {
   display: grid;
   /* grid-template-columns: repeat(auto-fill, 150px); FAZ TER VÁRIAS COLUNAS ATÉ PREENCHER A TELA*/
   /* grid-template-columns: repeat(auto-fit, 150px); LIMITA DE ACORDO COM A QUANTIDADE DE COMPONENTES*/
   /* grid-template-rows: repeat(7, 1fr); */
-  grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
-  
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-columns: 150px;
+  grid-auto-flow: dense;
+  gap: 10px;
 }
 
 .item {
-  width: 150px;
+  width: 100%;
   background-color: blue;
   color: #fff;
   box-sizing: border-box;
-  padding: 32px;
+  /* padding: 32px; */
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
 }
 
-.item4 {
-  /* grid-column: 5/ span 3; O SPAN OBRIGA O COMPONENTE A INTERAR 3 COLUNAS*/
-  /* grid-column-end: -2; PEGA DOS VALORES NEGATIVOS */
+.c1 {
+  grid-column: span 1;
+}
+
+.c2 {
+  grid-column: span 2;
+}
+
+.c3 {
+  grid-column: span 3;
+}
+
+.r1 {
+  grid-row: span 1;
+}
+
+.r2 {
+  grid-row: span 2;
+}
+
+.r3 {
+  grid-row: span 3;
+}
+
+.c1,
+.c2,
+.c3,
+.r1,
+.r2,
+.r3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.c1 img,
+.c2 img,
+.c3 img,
+.r1 img,
+.r2 img,
+.r3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header, footer {
+  display: flex;
+  justify-content: center;
+}
+
+header h1, footer h1 {
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: red;
+}
+
+@media only screen and (max-width: 800px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
