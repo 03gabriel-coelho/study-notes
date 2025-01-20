@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  width: 100%;
+}
+ul li {
+  display: block;
+  background: blue;
+  border-bottom: 1px solid yellow;
+}
+
+main {
+  width: 800px;
+}
+
+nav {
+  width: 100vw;
+  height: 80px;
+}
+nav a {
+  color: blue;
+  text-decoration: none;
+  font-size: 18px;
+  transform: scale(1.2);
+}/*# sourceMappingURL=style.css.map */
