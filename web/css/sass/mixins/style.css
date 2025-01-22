@@ -1,0 +1,21 @@
+.card {
+  width: 20%;
+  display: table;
+  background-color: blue;
+  border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}/*# sourceMappingURL=style.css.map */

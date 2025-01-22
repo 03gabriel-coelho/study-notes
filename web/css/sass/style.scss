@@ -1,13 +1,28 @@
 @import 'partials/listas';
 @import 'partials/pages';
+@import 'partials/theme'; // IMPORTANDO VARIAVEIS
 
 nav {
   width: 100vw;
   height: 80px;
   a {
-    color: blue;
+    color: $primary-color; // USANDO VARIAVEIS
     text-decoration: none;
     font-size: 18px;
     transform: scale(1.2);
+    margin-bottom: $spacer-1;
+
+    &:hover { // USANDO SELETORES
+      color: yellow;
+    }
+
+    > span { // UTILIZANDO PARA AFETAR OS FILHOS DIRETOS 
+      font-size: 16px;
+
+      span {
+        font-size: 16px;
+        color: green;
+      }
+    }
   }
 }

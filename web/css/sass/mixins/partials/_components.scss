@@ -1,0 +1,20 @@
+@mixin card {
+  width: 20%;
+  display: table;
+  background-color: blue;
+  border-radius: 8px;
+}
+
+@mixin btn {
+  border: none;
+  height: 40px;
+  padding: 8px 32px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.card {
+  @include card();
+}
