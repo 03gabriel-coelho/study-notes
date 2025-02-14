@@ -1,3 +1,11 @@
+/* DIFERENÇA ENTRE PX, EM E REM */
+
+/*
+PX: É uma unidade de medida fixa, ou seja, não muda de acordo com o tamanho da fonte do elemento pai.
+EM: É uma unidade de medida relativa, ou seja, muda de acordo com o tamanho da fonte do elemento pai.
+REM: É uma unidade de medida relativa, ou seja, muda de acordo com o tamanho da fonte do elemento raiz (html).
+*/
+
 /* PROPRIEDADES INTERESSANTES: */
 
 anotacao flex {

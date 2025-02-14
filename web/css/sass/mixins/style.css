@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .card-positive {
   width: 20%;
   display: table;
@@ -12,6 +13,21 @@
   padding: 32px;
   height: 400px;
   color: black;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.card-positive:after {
+  content: "status: Bão demais";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: black;
+  color: #FFF;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+.card-positive:hover {
+  background-color: #169916;
 }
 
 .card-negative {
@@ -28,6 +44,21 @@
   padding: 32px;
   height: 400px;
   color: black;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.card-negative:after {
+  content: "status: Deu ruim";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: black;
+  color: #FFF;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+.card-negative:hover {
+  background-color: #cd280e;
 }
 
 .btn {

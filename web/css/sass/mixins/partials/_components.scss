@@ -1,4 +1,23 @@
-@mixin card($bgcolor, $txtcolor, $icon) {
+@function changeColor($type, $color) {
+  @if $type == light {
+    $newColor: lighten($color, 10%);
+    @return $newColor;
+  }
+  @else if $type == dark {
+    $newColor: darken($color, 30%);
+    @return $newColor;
+  }
+  @else if $type == comp {
+    $newColor: complement($color);
+    @return $newColor;
+  }
+  @else {
+    $newColor: $color;
+    @return $newColor;
+  }
+}
+
+@mixin card($bgcolor, $txtcolor, $icon, $badge: 'OK') {
   width: 20%;
   display: table;
   background-color: $bgcolor;
@@ -12,6 +31,23 @@
   padding: 32px;
   height: 400px;
   color: $txtcolor;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+  &:after {
+    content: 'status: ' + $badge;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: black;
+    color: #FFF;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    background-color: changeColor(dark, $bgcolor);
+  }
 }
 
 @mixin btn($bgcolor, $txtcolor) {
@@ -30,11 +66,11 @@
 }
 
 .card-positive {
-  @include card(#60e860, black, 'images/chart-up.svg');
+  @include card(#60e860, black, 'images/chart-up.svg', 'Bão demais');
 }
 
 .card-negative {
-  @include card(#f68e7e, black, 'images/chart-down.svg');
+  @include card(#f68e7e, black, 'images/chart-down.svg', 'Deu ruim');
 }
 
 .btn {

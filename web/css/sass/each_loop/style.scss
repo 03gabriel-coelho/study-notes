@@ -1,0 +1,30 @@
+$networks: (
+  facebook: '#3b5998',
+  twitter: '#00aced',
+  google: '#dd4b39',
+  linkedin: '#007bb6',
+  youtube: '#bb0000'
+);
+
+@each $key, $value in $networks {
+  .icon-#{$key} {
+    background-image: url('images/#{$key}.svg');
+    background-color: $value;
+  }
+}
+
+$networks2:
+  facebook #3b5998 64px,
+  twitter #00aced 64px,
+  google #dd4b39 64px,
+  linkedin #007bb6 64px,
+  youtube #bb0000 64px;
+
+@each $name, $color, $size in $networks2 {
+  .icon-#{$name} {
+    background-image: url('images/#{$name}.svg');
+    background-color: $color;
+    width: $size;
+    height: $size;
+  }
+}
