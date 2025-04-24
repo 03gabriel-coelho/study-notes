@@ -1,0 +1,20 @@
+/* Criar uma classe de escopo global, onde você consegue usar em qualquer arquivo livremente, sem importação */
+:global(.minha-classe-global) {
+  color: red;
+  font-size: 20px;
+}
+
+/* Utilizar um 'composes' para compor uma classe junto a outra, meio que reaproveitar a classe */
+.exemploParaCompor {
+  color: red;
+}
+
+.exemploCompondo {
+  composes: exemploParaCompor;
+}
+
+/* OU */
+
+.exemploExportando {
+  composes: exemploParaCompor from './anotacoes.module.css';
+}

@@ -8,6 +8,12 @@ REM: É uma unidade de medida relativa, ou seja, muda de acordo com o tamanho da
 
 /* PROPRIEDADES INTERESSANTES: */
 
+interessantes {
+  position: absolute; /*Posso mover livremente o componente dentro do componente pai com top e right */
+  box-sizing: border-box; /* Dispoe os elementos filhos de forma correta dentro do componente, sem que ultrapasse caso tenha borda ou padding*/
+  left: calc((100% - 200px)/2); /* fazer calculo de variaveis */
+}
+
 anotacao flex {
   display: flex; /* transforma o container em um flex container */
   flex-direction: row; /* define a direção dos itens dentro do container */
