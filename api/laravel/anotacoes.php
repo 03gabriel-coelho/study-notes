@@ -29,5 +29,3 @@ dd($variavel) ----- > imprime a variável e para a execução do código
 dump($variavel) ----- > imprime a variável e continua a execução do código
 print_r($variavel) ----- > imprime a variável e continua a execução do código
 var_dump($variavel) ----- > imprime a variável e continua a execução do código
-
-teste celular
