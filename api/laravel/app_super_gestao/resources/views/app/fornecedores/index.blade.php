@@ -8,11 +8,15 @@
     echo 'Texto de teste';
 @endphp
 
-@if(count($fornecedores) > 0 && count($fornecedores) < 10)
-    <h3>Existem alguns fornecedores cadastrados</h3>
-@elseif(count($fornecedores) > 10)
-    <h3>Existem muitos fornecedores cadastrados</h3>
-@else
-    <h3>Não existem fornecedores cadastrados</h3>
-@endif
-
+{{-- @dd($fornecedores); --}}
+<br>
+@isset($fornecedores)
+    Fornecedor: {{ $fornecedores[0]['nome'] }}
+    Status: {{ $fornecedores[0]['status'] }}
+    CNPJ: {{ $fornecedores[0]['cnpj'] }}
+    @isset($fornecedores[0]['cnpj'])
+        @empty($fornecedores[0]['cnpj'])
+            CNPJ não informado
+        @endempty
+    @endisset
+@endisset
