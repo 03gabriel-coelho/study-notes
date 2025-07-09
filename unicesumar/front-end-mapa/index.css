@@ -1,0 +1,121 @@
+body {
+  background-color: #4CAF50;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header img {
+  width: 30%;
+  border-radius: 100%;
+  border: 5px solid #FFF;
+}
+
+header div nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+header div nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  text-decoration: overline;
+}
+
+main section, footer {
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#sobre {
+  width: 70%;
+}
+
+#habilidades {
+  background-color: #886ecf41;
+  padding-bottom: 30px;
+  width: 70%;
+  border-radius: 30px;
+}
+
+#projetos, #contato {
+  width: auto;
+  text-align: start;
+}
+
+#projetos p a, #contato p a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+  }
+
+  header div nav ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+
+  header img {
+    width: 50%;
+  }
+  
+  header div nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header div nav ul li a {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  main section, footer {
+    width: 90%;
+  }
+  
+  #sobre, #habilidades, #projetos, #contato {
+    width: auto;
+  }
+  
+}
