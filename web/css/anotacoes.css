@@ -11,7 +11,25 @@ REM: É uma unidade de medida relativa, ou seja, muda de acordo com o tamanho da
 interessantes {
   position: absolute; /*Posso mover livremente o componente dentro do componente pai com top e right */
   box-sizing: border-box; /* Dispoe os elementos filhos de forma correta dentro do componente, sem que ultrapasse caso tenha borda ou padding*/
-  left: calc((100% - 200px)/2); /* fazer calculo de variaveis */
+  left: calc((100% - 200px) / 2); /* fazer calculo de variaveis */
+  position: sticky;  /* DEIXA O COMPONENTE FIXO EM RELAÇÃO AO SCROLL DO COMPONENTE PAI */
+}
+
+anotacao textos {
+  /*Limitando linhas verticalmente */
+  height: 2.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /*Quantidade de linhas */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /*Limitando linhas horizontalmente */
+  width: 300px; /* tamanho desejado */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 anotacao flex {
@@ -31,8 +49,14 @@ anotacao flex {
 
 anotacao grid {
   display: grid; /* transforma o container em um grid container */
-  grid-template-columns: repeat(3, 1fr); /* define a quantidade de colunas e o tamanho de cada uma */
-  grid-template-rows: repeat(3, 1fr); /* define a quantidade de linhas e o tamanho de cada uma */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* define a quantidade de colunas e o tamanho de cada uma */
+  grid-template-rows: repeat(
+    3,
+    1fr
+  ); /* define a quantidade de linhas e o tamanho de cada uma */
   grid-auto-rows: 100px; /* define o tamanho padrão das linhas */
   grid-template-areas: "header header header" "main main sidebar" "footer footer footer"; /* define a área de cada item */
   grid-area: header; /* define a área do item */
@@ -50,6 +74,12 @@ anotacao grid {
   place-items: center; /* alinha os itens no centro do container */
   justify-self: center; /* alinha o item no centro da coluna */
   align-self: center; /* alinha o item no centro da linha */
-  grid-template-columns: repeat(auto-fill, 150px); /* FAZ TER VÁRIAS COLUNAS ATÉ PREENCHER A TELA */
-  grid-template-columns: repeat(auto-fit, 150px); /* LIMITA DE ACORDO COM A QUANTIDADE DE COMPONENTES*/
+  grid-template-columns: repeat(
+    auto-fill,
+    150px
+  ); /* FAZ TER VÁRIAS COLUNAS ATÉ PREENCHER A TELA */
+  grid-template-columns: repeat(
+    auto-fit,
+    150px
+  ); /* LIMITA DE ACORDO COM A QUANTIDADE DE COMPONENTES*/
 }
